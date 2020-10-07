@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todo List</title>
+  <link rel="stylesheet" href="style/normalize.css" />
+  <link rel="stylesheet" href="style/index.css" />
+  <script src="scripts/TodoList.js" defer></script>
+  <script src="scripts/TodoListForm.js" defer></script>
+  <script src="scripts/TodoListItem.js" defer></script>
+  <script src="scripts/api.js" defer></script>
+  <script src="scripts/index.js" defer></script>
+</head>
+
+<body>
+
+  <!-- https://www.figma.com/file/6aW6vMNwEwYJTZA8NPx7Uw/TODO -->
+
+  <div class="page">
+    <!-- <section class="todolist">
+      <h1>Todo List</h1>
+      <form class="todolist-form">
+        <input type="text" class="todolist-form_input" />
+        <button type="submit" class="todolist-form_submit">Сохранить</button>
+      </form>
+    </section> -->
+  </div>
+
+  <template id="todolist-template" style="display: none;">
+    <section class="todolist">
+      <h1>Todo List</h1>
+    </section>
+  </template>
+
+  <template id="todolist-form-template" style="display: none;">
+    <form class="todolist-form">
+      <input type="text" class="todolist-form_input" />
+      <button type="submit" class="todolist-form_submit">Сохранить</button>
+    </form>
+  </template>
+
+  <template id="todolist-item-template" style="display: none;">
+    <article class="todolist-item">
+      <span class="todolist-item__text">Текст задачи</span>
+      <button class="todolist-item__copy"></button>
+      <button class="todolist-item__del"></button>
+    </article>
+  </template>
+
+</body>
+
+</html>

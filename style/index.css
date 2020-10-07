@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap');
+
+.page {
+  min-height: 100vh;
+  background: black;
+  font-family: 'Inter', sans-serif;
+}
+
+.todolist {
+  width: 700px;
+  margin: 0 auto;
+  padding: 96px 0 12px;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 900;
+  margin: 0;
+  color: white;
+  text-align: center;
+  margin-bottom: 54px;
+}
+
+.todolist-form {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.todolist-form_input {
+  background: white;
+  border-radius: 5px;
+  font-size: 24px;
+  padding: 21px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  border: none;
+  flex-grow: 1;
+}
+
+.todolist-form_submit {
+  background: white;
+  font-size: 24px;
+  padding: 21px;
+  border-radius: 5px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  border: none;
+  margin-left: 10px;
+}
+
+.todolist-item {
+  display: flex;
+  align-items: center;
+  border: 1px solid #6F6F6F;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 40px;
+  margin-bottom: 10px;
+}
+
+.todolist-item__text {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  color: white;
+  flex-grow: 1;
+}
+
+.todolist-item__copy {
+  width: 24px;
+  height: 24px;
+  background: url('../images/copy.svg') no-repeat center;
+  background-size: 24px 24px;
+  border: none;
+  margin-left: 30px;
+}
+
+.todolist-item__del {
+  width: 24px;
+  height: 24px;
+  background: url('../images/del.svg') no-repeat center;
+  background-size: 20px 20px;
+  border: none;
+  margin-left: 30px;
+}
