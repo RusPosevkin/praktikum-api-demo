@@ -1,5 +1,5 @@
 const api = new Api({
-  url: "https://api-test.pa7lux.ru/streams/",
+  url: "https://api.todo-list.ru/tasks/",
   headers: {
 		//Authorisation: 'fdsfdfsfdsa',
     "content-type": "application/json",
@@ -13,7 +13,7 @@ const createTodoListItem = (...arg) => new TodoListItem(...arg);
 const tasks = api.getAllTasks();
 tasks.then((data) => {
   const todoList = new TodoList(
-    data.map((item) => ({ name: item.name, id: item.id })),
+    data.map((item) => ({ name: item.name, id: item._id })),
     createTodoListForm,
     createTodoListItem,
     api
